@@ -1,0 +1,1 @@
+# wdio-dockerized-selenium-service

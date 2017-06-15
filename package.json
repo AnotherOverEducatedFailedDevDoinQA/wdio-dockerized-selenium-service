@@ -1,0 +1,54 @@
+{
+  "name": "wdio-dockerized-selenium-service",
+  "version": "0.0.1",
+  "description": "WebdriverIO service to start & stop a docker container running Selenium Standalone server",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s clean compile",
+    "clean": "rm -rf ./build",
+    "compile": "babel lib/ -d build/",
+    "eslint": "eslint ./lib",
+    "test": "wdio ./test/wdio.conf.js",
+    "prepublish": "npm prune",
+    "watch": "npm run compile -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullin/wdio-dockerized-selenium-service.git"
+  },
+  "keywords": [
+    "webdriverio",
+    "wdio",
+    "wdio-service",
+    "selenium",
+    "standalone",
+    "server",
+    "tests",
+    "docker"
+  ],
+  "author": "Nalin Makar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nullin/wdio-dockerized-selenium-service/issues"
+  },
+  "homepage": "https://github.com/nullin/wdio-dockerized-selenium-service",
+  "dependencies": {
+    "dateformat": "^2.0.0",
+    "wait-on": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-preset-env": "1.4.0",
+    "eslint": "3.19.0",
+    "npm-run-all": "4.0.2",
+    "mocha": "^3.3.0",
+    "wdio-mocha-framework": "^0.5.10",
+    "webdriverio": "^4.8.0"
+  },
+  "contributors": [
+    "Nalin Makar <nullin@nullin.com>"
+  ],
+  "false": {}
+}

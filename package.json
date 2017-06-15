@@ -8,8 +8,12 @@
     "clean": "rm -rf ./build",
     "compile": "babel lib/ -d build/",
     "eslint": "eslint ./lib",
-    "test": "wdio ./test/wdio.conf.js",
     "prepublish": "npm prune",
+    "release": "np patch",
+    "release:patch": "np patch",
+    "release:minor": "np minor",
+    "release:major": "np major",
+    "test": "wdio ./test/wdio.conf.js",
     "watch": "npm run compile -- --watch"
   },
   "repository": {
@@ -42,6 +46,7 @@
     "babel-eslint": "7.2.3",
     "babel-preset-env": "1.4.0",
     "eslint": "3.19.0",
+    "np": "2.13.3",
     "npm-run-all": "4.0.2",
     "mocha": "^3.3.0",
     "wdio-mocha-framework": "^0.5.10",

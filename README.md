@@ -37,7 +37,12 @@ Default: `selenium/standalone-chrome:3.4.0`
 
 ### enabled
 Whether this service should be used or not. It's useful at times to disable it when running locally, or only
-enable it when running it as part of ci. Personally I have used `yargs` package and setup a flag to enable it only when needed:
+enable it when running it as part of ci. 
+
+Default: `true`
+
+#### Example
+Personally I have used `yargs` package and setup a flag to enable it only when needed. Update `wdio.conf.js` with
 
 ```
 dockerizedSeleniumArgs: {
@@ -45,7 +50,7 @@ dockerizedSeleniumArgs: {
 }
 ```
 
-Default: `true`
+and then specify `--use-dockerized-selenium` as a commmand line argument when running tests.
 
 ## Tests In/Out of docker
 

@@ -1,6 +1,6 @@
 {
   "name": "wdio-dockerized-selenium-service",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "WebdriverIO service to start & stop a docker container running Selenium Standalone server",
   "main": "index.js",
   "scripts": {

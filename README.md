@@ -26,7 +26,8 @@ You can additionally update `wdio.conf.js` with following options:
 ```js
 dockerizedSeleniumArgs: {
     imageName: <string>,
-    enabled: <boolean>
+    enabled: <boolean>,
+    debug: <boolean>
 }
 ```
 
@@ -51,6 +52,11 @@ dockerizedSeleniumArgs: {
 ```
 
 and then specify `--use-dockerized-selenium` as a commmand line argument when running tests.
+
+### debug
+Enables debug logging.
+
+Default: `false`
 
 ## Tests In/Out of docker
 

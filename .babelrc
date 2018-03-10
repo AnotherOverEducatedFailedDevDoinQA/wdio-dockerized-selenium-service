@@ -1,14 +1,3 @@
-{
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "node": "current"
-        }
-      }
-    ]
-  ],
-  "retainLines": true,
-  "sourceMaps": "both"
-}
+hello world!
+my first git work!
+kicimi op
